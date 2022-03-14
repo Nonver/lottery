@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>49图库</title>
+		<link rel="stylesheet" type="text/css" href="./css/sty.css" />
+		<link rel="stylesheet" type="text/css" href="./css/styr.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css" />
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js"></script>
+		<script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+		<script src="js/sty.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 顶部 -->
+		<div class="van-nav-bar van-nav-bar--fixed van-hairline--bottom">
+			<div class="van-nav-bar__content">
+				<div class="van-nav-bar__left"><b class="van-icon van-icon-search"
+						style="font-weight: 900; color: rgb(57, 78, 98); font-size: 16px;">
+						<!---->
+					</b></div>
+				<div class="van-nav-bar__title van-ellipsis">49图库</div>
+				<div class="van-nav-bar__right"><img
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAFMandsAAAAAXNSR0IArs4c6QAAAmFJREFUOBGNVE1oE1EQnvd2m1AFLUIRTBt79IceLF6ySaQoVE/ZpBDEVFGyqwehJ3vwIG0vHlTUSC5SahQ8hUKtuXisKE292CKCiiKITfy79KBJ3JB947ytuyS6/swhM2++7828973ZALSblsyOtK8746huHu3MRBLGJy+jjRo7tZR5UCa4m8UWvEBbZNy15zXdqHqsSCKLhNx1UEJuuzSHEQpsORvTT6cQkTEXOXTM3B7g3Q0v4QKup7PVgkP9W5vPKgccUkTP1gGhmzH2gSHmlkqFKy5ZelX+ENMCztaEwJUnvxAk7msR3ViVAPlF6f94JrraK0S47F1csl2LJc3hUODwXrpj7rcKpFCR6m4jaVc5ihyL6UbGBsgT8zUJs6cvGO6dm5tuutVA07PrcqEljA1dPWQjYI7OCKoAHOtS1dDj+ZmP7ZyOM0R1Y5LanCRtpgFQKS8U7rSTvTiWzF6llhdkwlHUQ34GtmADFPbLZUcLmfibxdJnwnaz9YYBmwSGdRDsGnBll28Xv0I0v3Hbat2gAWjSuB1hyGwE/Bzs2VH1isi5atRwv8qU94/uzzwfOTGx+dvX9fMgcAKBVQDFueVSYcivAYunx3tbVv0dgePLpVuFiH5qkMRaoSctA+9Kl+/d/OK3sT3HhVWjZ8ZNiqI+lUBw38BLKvAWGFv8nwJyjyOs/F6iKfM4DX2cvpw1RbCqADEl54iucrEn3H39QT5vyQ1+9s/XGR41+ywbLwFihiF8pyZFOnmKcz61tDCbk0U9Yf06yNzD+dkKuTGa8Ab9b+zmjBeFsAcFYtjd8wO2DNQkSsFZNAAAAABJRU5ErkJggg=="
+						width="13"></div>
+			</div>
+		</div>
+
+		<div id="app" class="home">
+			<van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+				<van-swipe-item>
+					<img src="img/20210402183240-596309796.jpg">
+				</van-swipe-item>
+				<van-swipe-item>
+					<img src="img/20210402183240-596309796.jpg">
+				</van-swipe-item>
+				<van-swipe-item>
+					<img src="img/20210402183240-596309796.jpg">
+				</van-swipe-item>
+				<van-swipe-item>
+					<img src="img/20210402183240-596309796.jpg">
+				</van-swipe-item>
+			</van-swipe>
+			<van-notice-bar color="#000000" background="#FFFFFF" left-icon="volume-o">
+				香港賽馬會宣佈2022年3月8日起，香港六合彩改為逢星期二及星期五每週攪珠兩次，直至另行通知。
+			</van-notice-bar>
+			<ul class="platform-list">
+				<li :class="color01" @click="an(1)">
+					<div class="item-body">
+						<div class="title"><b>广西彩</b></div>
+						<div class="time"><span>03月14日</span></div>
+					</div>
+				</li>
+				<li :class="color02" @click="an(2)">
+					<div class="item-body">
+						<div class="title"><b>澳彩</b></div>
+						<div class="time"><span>03月14日</span></div>
+					</div>
+				</li>
+				<li :class="color03" @click="an(3)">
+					<div class="item-body">
+						<div class="title"><b>港彩</b></div>
+						<div class="time"><span>03月14日</span></div>
+					</div>
+				</li>
+				<li :class="color04" @click="an(4)">
+					<div class="item-body">
+						<div class="title"><b>台彩</b></div>
+						<div class="time"><span>03月14日</span></div>
+					</div>
+				</li>
+				<li :class="color05" @click="an(5)">
+					<div class="item-body">
+						<div class="title"><b>新彩</b></div>
+						<div class="time"><span>03月14日</span></div>
+					</div>
+				</li>
+			</ul>
+			<main class="kj">
+				<div class="border-box">
+					<ul class="head">
+						<li>第 <span id="q">{{num}}</span> 期开奖结果</li>
+						<li><a href="lottery.html" target="_top">历史记录</a></li>
+					</ul>
+					<div class="kj-box">
+						<ul>
+							<li><span id="w1" :class="on">
+									<lable id="m1">{{Math.random(10,100)*100}}</lable>
+								</span><em>
+									<lable id="m1x">水/龙</lable>
+								</em></li>
+							<li><span id="w2" :class="ol">
+									<lable id="m2">{{Math.random(10,100)*100}}</lable>
+								</span><em>
+									<lable id="m2x">水/兔</lable>
+								</em></li>
+							<li><span id="w3" :class="ol">
+									<lable id="m3">{{Math.random(10,100)*100}}</lable>
+								</span><em>
+									<lable id="m3x">土/龙</lable>
+								</em></li>
+							<li><span id="w4" :class="on">
+									<lable id="m4">{{Math.random(10,100)*100}}</lable>
+								</span><em>
+									<lable id="m4x">水/虎</lable>
+								</em></li>
+							<li><span id="w5" :class="on">
+									<lable id="m5">{{Math.random(10,100)*100}}</lable>
+								</span><em>
+									<lable id="m5x">木/狗</lable>
+								</em></li>
+							<li><span id="w6" :class="or">
+									<lable id="m6">{{Math.random(10,100)*100}}</lable>
+								</span><em>
+									<lable id="m6x">金/龙</lable>
+								</em></li>
+							<li><span></span></li>
+							<li><span id="w7" :class="ol">
+									<lable id="s1">{{Math.random(10,100)*100}}</lable>
+								</span><em>
+									<lable id="s1x">木/鸡</lable>
+								</em></li>
+						</ul>
+					</div>
+					<div class="kj-foot">
+						第<span id="nextQiShu">{{num}}</span>期 <span id="nextYear">2022</span>/<span
+							id="nextMonth">03</span>/<span id="nextDay">14</span> 星期<span id="nextWeek">{{max}}</span> <span
+							id="nextTime">21点32分</span>
+					</div>
+				</div>
+				<a href="#" class="alertBox">点击开启自动刷新</a>
+				<div id="tmpinfo" style="display:none;">2022072,11,48,47,49,05,23,42,2022073,03,14,一,21点32分</div>
+			</main>
+			<div class="mo"></div>
+			<!-- 导航 -->
+			<div>
+				<van-grid :column-num="4">
+					<van-grid-item v-for="item in dataArr" :key="item" :icon="item.icon" :text="item.name" />
+				</van-grid>
+			</div>
+			<div class="icon-mo">
+				<div>
+					<div class="icon-bg"><i class="van-icon van-icon-photo" style="color: rgb(255, 255, 255);">
+							<!---->
+						</i>
+					</div>
+					<span>2022年彩色</span>
+				</div>
+				<div>
+					<div class="icon-bg gray"><i class="van-icon van-icon-photo" style="color: rgb(255, 255, 255);">
+							<!---->
+						</i></div>
+					<span>2022年彩色</span>
+				</div>
+				<div>
+					<div class="icon-bg"><i class="van-icon van-icon-photo" style="color: rgb(255, 255, 255);">
+							<!---->
+						</i>
+					</div>
+					<span>2022年彩色</span>
+				</div>
+				<div>
+					<div class="icon-bg gray"><i class="van-icon van-icon-photo" style="color: rgb(255, 255, 255);">
+							<!---->
+						</i></div>
+					<span>2022年彩色</span>
+				</div>
+			</div>
+			<div class="image">
+				<div class="list">
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/mrydsztt.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/mrydsztt.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">美人鱼单双中特图</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/xrff.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/xrff.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">相入非非</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/jrxq.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/jrxq.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">今日闲情</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/ampgt.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/ampgt.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">澳门跑狗图</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/ampgt.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/amsbx.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">四不像</div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/amgjp.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/amgjp.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">管家婆</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/ampm.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/ampm.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">跑马图</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/amgp.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/amgp.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">挂牌图</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/sbxxj.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/sbxxj.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">四不像玄机图</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/lmkz.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/lmkz.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">龙门客栈</div>
+					</div>
+					<div class="image-item">
+						<div class="image-item-image">
+							<div class="van-image" style="width: 100%;"><img class="van-image__img"
+									data-src="https://tk2.cdztkc.com:4949/m/col/73/amhh.jpg"
+									src="https://tk2.cdztkc.com:4949/m/col/73/amhh.jpg" lazy="loaded"></div>
+						</div>
+						<div class="image-item-title">红虎图</div>
+					</div>
+				</div>
+			</div>
+			<div class="layout-nav">
+				<div class="van-hairline--top-bottom van-tabbar van-tabbar--unfit">
+					<div class="van-tabbar-item">
+						<div class="van-tabbar-item__icon"><img src="img/home.7355bc48.png">
+							<!---->
+						</div>
+						<div class="van-tabbar-item__text">
+							49图库
+						</div>
+					</div>
+					<div class="van-tabbar-item">
+						<div class="van-tabbar-item__icon"><img src="img/find.be4327ee.png">
+							<!---->
+						</div>
+						<div class="van-tabbar-item__text">
+							发现
+						</div>
+					</div>
+					<div class="van-tabbar-item">
+						<div class="van-tabbar-item__icon">
+							<!---->
+						</div>
+						<div class="van-tabbar-item__text">
+							<div class="tabs-3"><img src="img/icon-41.54d1ee44.png">
+								<div>淘料市场</div>
+							</div>
+						</div>
+					</div>
+					<div class="van-tabbar-item">
+						<div class="van-tabbar-item__icon"><img
+								src="data:image/png;base64,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">
+							<!---->
+						</div>
+						<div class="van-tabbar-item__text">
+							寻宝
+						</div>
+					</div>
+					<div class="van-tabbar-item">
+						<div class="van-tabbar-item__icon"><img src="img/my.9529fa90.png">
+							<!---->
+						</div>
+						<div class="van-tabbar-item__text">
+							我的
+						</div>
+					</div>
+				</div>
+				<div class="nav-solt"></div>
+			</div>
+		</div>
+	</body>
+	<!-- 	<script>
+	export default {
+	  name: "app",
+	  data() {
+	    return {
+			
+		};
+	  },
+	  methods: {
+	    // 组件的方法
+	  },
+	  watch: {
+	    // watch擅长处理的场景：一个数据影响多个数据
+	  },
+	  computed: {
+	    // computed擅长处理的场景：一个数据受多个数据影响
+	  },
+	  beforeCreate: function() {
+	    // 在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。
+	  },
+	  created: function() {
+	    // 实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。
+	  },
+	  beforeMount: function() {
+	    // 在挂载开始之前被调用：相关的 render 函数首次被调用。
+	  },
+	  mounted: function() {
+	    // 编译好的HTML挂载到页面完成后执行的事件钩子
+	    // el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。
+	    // 此钩子函数中一般会做一些ajax请求获取数据进行数据初始化
+	    console.log("Home done");
+	  },
+	  beforeUpdate: function() {
+	    // 数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。 你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。
+	  },
+	  updated: function() {
+	    // 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。
+	    // 当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。
+	    // 该钩子在服务器端渲染期间不被调用。
+	  },
+	  beforeDestroy: function() {
+	    // 实例销毁之前调用。在这一步，实例仍然完全可用。
+	  },
+	  destroyed: function() {
+	    // Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。
+	  }
+	};
+	</script> -->
+	<script>
+		// 在 #app 标签下渲染一个按钮组件
+		new Vue({
+			el: '#app',
+			data: {
+				max:'一',
+				ol:'m0 green',
+				on:'m0 blue',
+				or:'m0 red',
+				num:30,
+				color01:'act',
+				color02:'',
+				color03:'',
+				color04:'',
+				color05:'',
+				dataArr: [{
+					'name': '开奖现场',
+					'icon': 'https://www.49070c.com/img/kaijiangxianchang.06c915b5.png'
+				}, {
+					'name': '资料大全',
+					'icon': 'https://www.49070c.com/img/ziliaodaquan.2b434b4d.png'
+				}, {
+					'name': '资讯统计',
+					'icon': 'https://www.49070c.com/img/zixuntongji.876c0a58.png'
+				}, {
+					'name': '查询助手',
+					'icon': 'https://www.49070c.com/img/chaxunzhushou.fc4826b9.png'
+				}, {
+					'name': '幽默猜测',
+					'icon': 'https://www.49070c.com/img/ymjc.2895ae7d.png'
+				}, {
+					'name': '六合图库',
+					'icon': 'https://www.49070c.com/img/liuhetuku.14ad3160.png'
+				}, {
+					'name': '高手论坛',
+					'icon': 'https://www.49070c.com/img/jiaoliudating.18841653.png'
+				}, {
+					'name': '工具宝箱',
+					'icon': 'https://www.49070c.com/img/gongjubaoxiang.ab44efbf.png'
+				}, ],
+				list: [{
+					'name': '开奖现场',
+					'icon': 'https://www.49070c.com/img/kaijiangxianchang.06c915b5.png'
+				}, {
+					'name': '资料大全',
+					'icon': 'https://www.49070c.com/img/ziliaodaquan.2b434b4d.png'
+				}, {
+					'name': '资讯统计',
+					'icon': 'https://www.49070c.com/img/zixuntongji.876c0a58.png'
+				}, {
+					'name': '查询助手',
+					'icon': 'https://www.49070c.com/img/chaxunzhushou.fc4826b9.png'
+				}],
+			},
+			methods: {
+				an(e){
+					this.color01 = '';
+					this.color02 = '';
+					this.color03 = '';
+					this.color04 = '';
+					this.color05 = '';
+					if(e==1){
+						this.color01 = 'act';
+						this.num = 30
+						this.ol='m0 green'
+						this.on='m0 blue'
+						this.or='m0 red'
+						this.max = '一'
+					}else if(e==2){
+						this.color02 = 'act';
+						this.num = 35850
+						this.ol = 'm0 red'
+						this.or = 'm0 blue'
+						this.on = 'm0 green'
+						this.max = '五'
+					}else if(e==3){
+						this.color03 = 'act';
+						this.num = 14440
+						this.ol='m0 red'
+						this.on='m0 green'
+						this.or='m0 blue'
+						this.max = '三'
+					}else if(e==4){
+						this.color04 = 'act';
+						this.num = 30155
+						this.ol='m0 green'
+						this.on='m0 red'
+						this.or='m0 green'
+						this.max = '天'
+					}else if(e==5){
+						this.color05 = 'act';
+						this.num = 35850
+						this.ol = 'm0 red'
+						this.or = 'm0 blue'
+						this.on = 'm0 green'
+						this.max = '五'
+					}
+				}
+			},
+		});
+
+		// 调用函数组件，弹出一个 Toas
+
+		// 通过 CDN 引入时不会自动注册 Lazyload 组件
+		// 可以通过下面的方式手动注册
+		Vue.use(vant.Lazyload);
+		Vue.use(Grid);
+		Vue.use(GridItem);
+		Vue.use(NoticeBar);
+		Vue.use(Swipe);
+		Vue.use(SwipeItem);
+		Vue.use(Tab);
+		Vue.use(Tabs);
+	</script>
+</html>
