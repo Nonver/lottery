@@ -1,0 +1,33 @@
+.home {
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	background-color: #ffffff;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.hd-text {
+	padding-left: .2rem;
+}
+
+.border-box .border-box-body .slot-icon span {
+	padding-right: 0.06rem;
+	overflow: hidden;
+	width: 16px;
+	display: block;
+	margin-left: 6px;
+}
+
+.lon {
+	width: 120px;
+	height: 30px;
+	background: #00000050;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 20px;
+	position: fixed;
+	z-index: 9999;
+	bottom: 20px;
+	left: 120px;
+	color: #FFF;
+}
